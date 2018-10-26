@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Glyphicon, Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 import axios from 'axios';
 
 import LoadingIndicatorComponent from './LoadingIndicatorComponent';
 import ListComponent from './ListComponent';
+import { request } from 'https';
 
 require('normalize.css/normalize.css');
 require('styles/App.css');
@@ -164,16 +165,43 @@ class AppComponent extends React.Component {
     }
 
     const requestData = this.state.requestData;
+    const hasSelection = this.state.rows.length === 1;
+
+    if (!hasSelection) {
+      return null;
+    }
+
+    if (requestData) {
+      var title = requestData.title ? requestData.title.replace(' =', '') : undefined;
+      var cover = requestData.cover ? requestData.cover.large : undefined;
+      
+      if (requestData.by_statement) {
+        var authors = requestData.by_statement;
+      } else if (requestData.authors) {
+        var authors = 'By: ';
+        for (let i = 0; i < requestData.authors.length; i++) {
+          authors += requestData.authors[i].name;
+          if (i < requestData.authors.length - 1) authors += ', ';
+        }
+      }
+    } else {
+      return <h3>No Book Data Found</h3>;
+    }
+
     return (
       <div>
         {/* <Button bsStyle='link' onClick={() => this.setState({ selectedSheet: undefined, selectedValue: undefined, requestData: undefined })}><Glyphicon glyph='cog' /></Button> */}
-        {requestData ? (
+        {/* <span>Data: {JSON.stringify(requestData)}</span> */}
+        <h3>{title}</h3>
+
+        {authors ? (
+          <span>{authors}</span>
+        ) : null }
+
+        {cover ? (
           <div>
-            <span>{JSON.stringify(requestData)}</span>
-            <h3>{requestData.title}</h3>
-            {requestData.cover ? (
-              <img src={requestData.cover.large}/>
-            ) : null}
+            <hr/>
+            <img src={cover}/>
           </div>
         ) : null}
       </div>

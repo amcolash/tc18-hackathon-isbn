@@ -4,8 +4,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
-require('styles//List.css');
-
 class ListComponent extends React.Component {
   makeButton (sheetName) {
     return (
