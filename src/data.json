@@ -1,0 +1,119 @@
+{
+    "ISBN:9780140265415": {
+        "publishers": [
+            {
+                "name": "Penguin Books"
+            }
+        ],
+        "pagination": "xiii, 233 p. ;",
+        "identifiers": {
+            "lccn": [
+                "2001274151"
+            ],
+            "openlibrary": [
+                "OL3968076M"
+            ],
+            "isbn_10": [
+                "0140265414"
+            ],
+            "oclc": [
+                "41581818"
+            ],
+            "goodreads": [
+                "253212"
+            ],
+            "librarything": [
+                "8279016"
+            ]
+        },
+        "table_of_contents": [
+            {
+                "title": "Eva's indifference / Soledad Pue\u0301rtolas",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "A literary tea party / Julio Ramo\u0301n Ribeyro",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "On the honeymoon / Javier Mari\u0301as",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Walimai / Isabel Allende",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Mari\u0301a dos Prazeres / Gabriel Garci\u0301a Ma\u0301rquez",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Las amigas / Carlos Fuentes",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Absurd ending / Laura Freixas",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "The possessed / Antonio Mun\u0303oz Molina",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Second time around / Julio Corta\u0301zar",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            },
+            {
+                "title": "Syllabus / Juan Benet.",
+                "label": "",
+                "pagenum": "",
+                "level": 0
+            }
+        ],
+        "title": "Short stories in Spanish",
+        "url": "https://openlibrary.org/books/OL3968076M/Short_stories_in_Spanish",
+        "classifications": {
+            "dewey_decimal_class": [
+                "863/.0108064"
+            ],
+            "lc_classifications": [
+                "PQ6267.E8 S56 1999"
+            ]
+        },
+        "number_of_pages": 233,
+        "cover": {
+            "small": "https://covers.openlibrary.org/b/id/99774-S.jpg",
+            "large": "https://covers.openlibrary.org/b/id/99774-L.jpg",
+            "medium": "https://covers.openlibrary.org/b/id/99774-M.jpg"
+        },
+        "publish_date": "1999",
+        "key": "/books/OL3968076M",
+        "by_statement": "edited by John R. King.",
+        "publish_places": [
+            {
+                "name": "London, England"
+            },
+            {
+                "name": "New York, N.Y"
+            }
+        ]
+    }
+}
